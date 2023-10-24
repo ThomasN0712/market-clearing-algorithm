@@ -9,7 +9,8 @@ from networkx.algorithms import bipartite
 
 def main():
     # Open files and read data
-    f = open("text.txt", "r")
+    file_name = input("Enter file name: ")
+    f = open(file_name, "r")
     lines = f.readlines()
 
     # Get number of houses
