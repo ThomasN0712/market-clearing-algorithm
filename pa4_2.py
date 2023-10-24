@@ -1,3 +1,8 @@
+# Name: Thomas Nguyen
+# Date: 10/26/2023
+# Assignment: 4 Part 2
+# Course: CECS 427
+
 import networkx as nx
 import matplotlib.pyplot as plt
 from networkx.algorithms import bipartite
@@ -57,11 +62,10 @@ def main():
             edge_list = [(k, v) for k, v in edge_dict.items()]
 
             # Draw graph with perfect matching highlighted
-            nx.draw_networkx_edges(B, pos=pos, edgelist=edge_list, width=2, edge_color="green")
+            nx.draw_networkx_edges(B, pos=pos, edgelist=edge_list, width=4, edge_color="green")
             nx.draw_networkx_labels(B, pos=pos)
             nx.draw(B, pos=pos)
             plt.show()
-
             break
         except:
             # Draw graph
